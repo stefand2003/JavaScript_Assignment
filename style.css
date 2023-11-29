@@ -1,0 +1,109 @@
+/* Resetting default margin and padding for body, h1, and p */
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling for the body */
+body {
+  width: 100%;
+}
+
+/* Styling for the canvas */
+canvas {
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+/* Styling for the centering container */
+.canvas_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Styling for the header */
+header {
+  text-align: center;
+  background-color: #71c7ec;
+  padding: 20px;
+}
+
+/* Styling for the random sentence */
+#randomSentence {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+/* Styling for buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.buttons button {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-size: 16px;
+  background-color: #71c7ec;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: #508bbd;
+}
+
+/* Styling for alert message */
+.alertMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Styling for footer */
+footer {
+  text-align: center;
+  background-color: #71c7ec;
+  padding: 20px;
+  font-size: 18px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+/* Styling for information area */
+.information-area {
+  padding: 15px;
+  max-width: 1000px;
+  width: 90%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+}
+
+/* Disabled button after 2 consecutive errors */
+.buttons button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  color: #555;
+}
+
+.buttons button:hover:disabled {
+  background-color: #ccc;
+}
